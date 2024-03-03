@@ -1,0 +1,384 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --white: white;
+    --orange: #E13F2C;
+    --black: black;
+    --gray: #747474;
+    --gray2: #575656;
+    --gray3: #e2e2e2;
+    --gray4: #5c5c5c;
+    --transparent: #000000b8;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--orange);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    color: var(--white);
+}
+
+h2.titulo {
+    color: var(--black);
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: var(--orange);
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    transform: scale(1.05);
+}
+
+/* CABEÇALHO */
+header {
+    padding: 40px 4%;
+    align-items: center;
+    margin-top: -30px;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: var(--gray4);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.titulo {
+    transform: scale(1.05);
+    color: var(--white);
+}
+
+header nav.menu-nav a:hover {
+    color: var(--black);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.menu {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+
+    padding: 15px;
+}
+
+.menu .itemmenu {
+    padding-left: 50px;
+    display: block;
+    color: var(--black);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a {
+    color: var(--gray2);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--black);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropdown-btn {
+    padding-left: 50px;
+    display: block;
+    color: var(--black);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+
+    min-width: 160px;
+
+    z-index: 1;
+    border: 1px solid var(--white);
+    box-shadow: 0px 0px 5px var(--gray3);
+}
+
+.submenu a {
+    float: none;
+    color: var(--gray2);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+}
+
+.submenu a:hover {
+    color: var(--black);
+}
+
+li:hover .submenu {
+    display: block;
+    border-radius: 3px;
+}
+
+body {
+    background-color: var(--white);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: var(--black);
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: var(--orange);
+}
+
+.topo-do-site .txt-topo-site p {
+    color: var(--black);
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* EXPLORANDO UNIVERSO TECHBLOOM */
+section.explorar {
+    padding: 40px 4%;
+}
+
+section.explorar .flex {
+    gap: 60px;
+}
+
+.explorar .explorar-box {
+    color: var(--black);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.explorar .explorar-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--gray3);
+}
+
+.explorar .explorar-box i {
+    font-size: 70px;
+    color: var(--orange);
+}
+
+.explorar .explorar-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* SOBRE */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: var(--black);
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: var(--orange);
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--orange);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* FEEDBACK */
+section.feedback {
+    padding: 80px 4%;
+    margin-top: -90px;
+}
+
+section.feedback .flex {
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.img-feed {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-feed:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--transparent);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white);
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.coluna {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 50px;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer {
+    padding: 40px 4%;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid var(--black);
+}
+
+footer .line-footer p i {
+    color: var(--black);
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: var(--black);
+}
+
+.rodape {
+    font-size: 12px;
+    color: var(--gray2);
+}

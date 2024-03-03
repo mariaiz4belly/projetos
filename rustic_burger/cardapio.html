@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Burger</title>
+    <style>
+        body {
+            font-family: Monospace;
+            font-size: 16px;
+            margin: 0px;
+            padding: 0px;
+            color: #220000;
+        }
+
+        ul.navbar {
+            font-size: 16px;
+            list-style-type: none;
+            margin: 0;
+            background-color: #220000;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        li.navitem {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a.navlink {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        header {
+            background-color: rgb(255, 180, 42);
+            text-align: center;
+            padding: 5px;
+        }
+
+        .block {
+            max-width: 600px;
+            margin: auto;
+            padding: 8px;
+        }
+
+        .product {
+            border-style: ridge;
+            border-style: solid;
+            border-color: #220000;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button {
+            background-color: #220000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #220000;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            text-align: center;
+            font-size: 8px;
+        }
+
+        .baseboard {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .partition {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <ul class="navbar">
+            <li class="navitem"><a class="navlink" href="sobre.html">Sobre</a></li>
+            <li class="navitem"><a class="navlink" href="contato.html">Contato</a></li>
+        </ul>
+    </center>
+    <br>
+    <br>
+    <header>
+        <img src="assets/imagens/rustic_burger.png" height="100px">
+    </header>
+
+    <h1 style="text-align: center; font-family: papyrus;">Cardápio</h1>
+    <div class="block">
+        <div class="product">
+            <img src="assets/imagens/lanches.png" height="200px">
+            <div>
+                <h2>Lanches</h2>
+                <p>A partir de: R$ 5,99.</p>
+                <a href="lanches.html">
+                    <button class="button" type="button" style="font-family: Lucida Console;">Confira as
+                        opções.</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="assets/imagens/bebidas.png" height="200px">
+            <div>
+                <h2>Bebidas</h2>
+                <p>A partir de: R$ 2,99.</p>
+                <a href="bebidas.html">
+                    <button class="button" type="button" style="font-family: Lucida Console;">Confira as
+                        opções.</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="assets/imagens/milk_shake.png" height="200px">
+            <div>
+                <h2>Milk-Shake</h2>
+                <p>A partir de: R$ 11,99.</p>
+                <a href="milk_shake.html">
+                    <button class="button" type="button" style="font-family: Lucida Console;">Confira as
+                        opções.</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="baseboard">
+            <div class="partition">
+                <b>
+                    <p style="font-size: 10px;">Emilia Maria Oliveira Marinho</p>
+                </b>
+                emilia.m@escolar.ifrn.edu.br
+            </div>
+            <div class="partition">
+                <b>
+                    <p style="font-size: 10px;">Júlio César Nascimento Vieira</p>
+                </b>
+                julio.vieira@escolar.ifrn.edu.br
+            </div>
+            <div class="partition">
+                <b>
+                    <p style="font-size: 10px;">Maria Izabelly Alves Batista da Silva</p>
+                </b>
+                izabelly.maria@escolar.ifrn.edu.br
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

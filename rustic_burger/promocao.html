@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Burger</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Monospace;
+            color: #220000;
+        }
+
+        ul.navbar {
+            font-size: 16px;
+            list-style-type: none;
+            margin: 0;
+            background-color: #220000;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        li.navitem {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a.navlink {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        header {
+            background-color: rgb(255, 180, 42);
+            text-align: center;
+            padding: 5px;
+        }
+
+        .emphasis {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .marketing {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .promo-text {
+            font-size: 70px;
+            font-family: fantasy;
+            color: #220000;
+            margin-bottom: 6px;
+        }
+
+        .promo-subtext {
+            font-size: 55px;
+            color: #220000;
+            font-family: papyrus;
+        }
+
+        h1 {
+            font-family: 'Papyrus', sans-serif;
+            font-size: 36px;
+            color: #220000;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #220000;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            text-align: center;
+            font-size: 8px;
+        }
+
+        .baseboard {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .partition {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <ul class="navbar">
+            <li class="navitem"><a class="navlink" href="sobre.html">Sobre</a></li>
+            <li class="navitem"><a class="navlink" href="cardapio.html">Cardápio</a></li>
+            <li class="navitem"><a class="navlink" href="contato.html">Contato</a></li>
+        </ul>
+    </center>
+    <br>
+    <br>
+    <br>
+
+    <header>
+        <img src="assets/imagens/rustic_burger.png" height="100px">
+    </header>
+
+    <div class="emphasis">
+        <div class="marketing">
+            <p class="promo-text">PROMOÇÃO<br><span class="promo-subtext">especial de<br></span>HAMBÚRGUER</p>
+            <p class="promo-text" style="font-size: 20px;">Apresentamos o
+                nosso Combo Irresistível:
+            </p>
+            <p class="promo-text" style="font-size: 24px; font-size: papyrus;">Por apenas R$ 29,99!</p>
+            <br>
+            <b>
+                <p class="promo-text" style="font-size: 18px; font-family: papyrus; color: #861825;">Hambúrguer
+                    premium:<span class="promo-subtext" style="font-size: 16px;"> um suculento hambúrguer
+                        <br>feito com carne de qualidade, queijo derretido,<br>alface crocante, tomate, cebola,
+                        bacon,
+                        pepino e<br>o nosso molho especial.</span></p>
+            </b>
+
+            <b>
+                <p class="promo-text" style="font-size: 18px; font-family: papyrus; color: #861825;">Milk shake
+                    delicioso:<span class="promo-subtext" style="font-size: 16px;"> acompanhe o
+                        seu<br>hambúrguer com um milkshake cremoso e refrescante.</span></p>
+            </b>
+            <br>
+
+            <b>
+                <p class="promo-text" style="font-size: 18px; font-family: papyrus; color: #861825;">Hot-dog:<span
+                        class="promo-subtext" style="font-size: 16px;"> além disso, desfrute
+                        de<br>um hot-dog recheado com sabores incríveis.</span>
+                </p>
+            </b>
+            <br>
+        </div>
+
+        <div class="marketing">
+            <img src="assets/imagens/promocao.png" height="750px">
+        </div>
+    </div>
+    <footer>
+        <div class="baseboard">
+            <div class="partition">
+                <b>
+                    <p style="font-size: 10px;">Emilia Maria Oliveira Marinho</p>
+                </b>
+                emilia.m@escolar.ifrn.edu.br
+            </div>
+            <div class="partition">
+                <b>
+                    <p style="font-size: 10px;">Júlio César Nascimento Vieira</p>
+                </b>
+                julio.vieira@escolar.ifrn.edu.br
+            </div>
+            <div class="partition">
+                <b>
+                    <p style="font-size: 10px;">Maria Izabelly Alves Batista da Silva</p>
+                </b>
+                izabelly.maria@escolar.ifrn.edu.br
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,647 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.cabecalho {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /*border: 1px solid #555555;*/
+}
+
+.logoifrn {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logoifrn div p {
+    padding: 20px;
+    margin-left: 15px;
+    text-align: left;
+    font-size: 12px;
+    color: #555555;
+}
+
+.logoifrn div img {
+    width: 240px;
+    left: 80px;
+}
+
+.redesebusca,
+.redessociais,
+.acessibilidade {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.redessociais div,
+.acessibilidade div {
+    width: 60px;
+    height: 60px;
+    padding-top: 47px;
+    text-align: center;
+}
+
+.busca {
+    padding: 35px;
+}
+
+.busca input {
+    max-width: 230px;
+    font-size: 18px;
+    height: 50px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.busca i {
+    position: relative;
+    left: -40px;
+}
+
+.menu {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+
+    padding: 15px;
+
+    box-shadow: 0px 5px 5px #cccccc;
+}
+
+.menu .itemmenu {
+    padding-left: 50px;
+}
+
+a {
+    color: #041c00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #147a02;
+}
+
+.conteudo {
+    width: auto;
+}
+
+.secao {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.secaocinza {
+    background-color: #eeebeb;
+}
+
+.titulosecao {
+    font-size: 40px;
+    font-weight: bold;
+    width: auto;
+    padding: 55px;
+    color: #041c00;
+    margin-top: -40px;
+}
+
+.contsecgrid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    padding: 30px;
+}
+
+.quadro {
+    padding: 20px;
+    line-height: 150%;
+}
+
+.img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.imgquadro img {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    border-radius: 5px;
+}
+
+.tituloquadro {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.grupoquadro,
+.subtituloquadro {
+    font-size: 18px;
+    line-height: 120%;
+    padding-bottom: 15px;
+}
+
+.datapubquadro {
+    font-size: 13px;
+}
+
+.botaomais {
+    width: 90%;
+    height: 60px;
+    padding: 10px;
+    padding-left: 40px
+}
+
+.botao1 {
+    width: fit-content;
+    cursor: pointer;
+    margin-top: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 25px;
+    height: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid rgb(101, 165, 101);
+    text-align: center;
+    white-space: 10px;
+    background: transparent;
+    color: #147a02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.botao1::before{
+    content: '';
+    position: absolute;
+    background: #041c00;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .9s ease;
+}
+
+.botao1:hover::before {
+    width: 100%;
+    transition: 500ms;
+    background-color: rgb(101, 165, 101);
+}
+
+.botaops {
+    width: 90%;
+    height: 60px;
+    padding: 10px;
+    padding-left: 40px
+}
+
+.botao2 {
+    width: fit-content;
+    cursor: pointer;
+    padding: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    justify-content: center;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 2px solid rgb(101, 165, 101);
+
+    color: #147a02;
+}
+
+.botao2::before{
+    content: '';
+    position: absolute;
+    background: #041c00;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .9s ease;
+}
+
+.botao2:hover::before {
+    width: 100%;
+    transition: 500ms;
+    background-color: rgb(101, 165, 101);
+}
+
+.descricaosecao {
+    font-size: 18px;
+    padding: 54px;
+    width: 50%;
+    line-height: 33px;
+    color: #555555;
+    margin-top: -83px;
+}
+
+.titulosec {
+    font-size: 45px;
+    font-weight: bold;
+    width: auto;
+    padding: 55px;
+    color: #041c00;
+    margin-top: 100px;
+}
+
+.subsecao {
+    width: auto;
+    height: auto;
+    padding-left: 50px;
+}
+
+.titulosubsecao {
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 80px;
+    padding-bottom: 15px;
+    color: #555555;
+}
+
+.quadrossubsecao {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.quadrosinfopai {
+    width: 95%;
+    height: 300px;
+    position: relative;
+}
+
+.quadrodeco {
+    width: 80%;
+    height: 150px;
+    background-color: #041c00;
+
+    position: absolute;
+    top: 50px;
+    left: 10%;
+}
+
+.quadrosinfo {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    position: absolute;
+    width: 100%;
+}
+
+.quadroifnumeros {
+    height: 70px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    font-size: 25px;
+    border: 2px solid #041c00;
+    box-shadow: 0px 5px 5px #041c00;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fontdestaque {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.fontnormal {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer {
+    width: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #041c00;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropdown-btn {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+
+    min-width: 160px;
+
+    z-index: 1;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 0px 5px #cccccc;
+}
+
+.submenu a {
+    float: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.submenu a:hover {
+    color: #147a02;
+}
+
+li:hover .submenu {
+    display: block;
+    border-radius: 3px;
+}
+
+.particaomenu {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    padding: 10px;
+    width: auto;
+}
+
+.divisao {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-block-start: auto;
+    padding: 50px;
+}
+
+.divisao2 {
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.divisao2 img {
+    text-align: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.d1visao {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    line-height: 2;
+}
+
+.divisao3 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 70px;
+}
+
+.redessociais {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.acessibilidade div {
+    width: 60px;
+    height: 60px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 14px;
+    text-align: left;
+}
+
+h4 {
+    font-size: 16px;
+    text-align: left;
+}
+
+
+p {
+    font-size: 14px;
+    text-align: left;
+    color: #555555;
+}
+
+i {
+    justify-content: left;
+}
+
+.espacamento {
+    line-height: 5;
+}
+
+.logogo {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.p1 {
+    font-size: 16px;
+    color: #555555;
+    font-weight: normal;
+}
+
+.p2 {
+    color: #041c00;
+    font-size: 16px;
+    padding-top: -20px;
+}
+
+.p3 {
+    color: #041c00;
+    font-size: 16px;
+    padding-top: -50px;
+}
+
+.p3-0 {
+    color: #041c00;
+    font-size: 16px;
+    padding-left: 13px;
+}
+
+.p4 {
+    color: rgb(6, 57, 151);
+    border: 1px solid rgb(6, 57, 151);
+    border-radius: 15px;
+    padding: 0.4%;
+    font-size: 13px;
+}
+
+.p5 {
+    color: #c3aa09;
+    border: 1px solid #c3aa09;
+    border-radius: 5px;
+}
+
+.blococursos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    line-height: 1;
+    padding: 50px;
+}
+
+.a2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #041c00;
+}
+
+.a3 {
+    color: rgb(101, 165, 101);
+    font-weight: bold;
+    padding-left: -50px;
+    font-size: 16px;
+}
+
+.a3:hover {
+    color: darkgreen;
+}
+
+.a4 {
+    color: #555555;
+    padding-left: -50px;
+    font-size: 16px;
+}
+
+.estude {
+    font-size: 17px;
+    color: #147a02;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.linha {
+    size: 5;
+    box-align: center;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-grow: 1;
+}
+
+.quadrosubsecao {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: #555555;
+}
+
+.separar {
+    padding-top: 50px;
+}
+
+.bloco {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+
+    padding: -60px;
+}
+
+.itembloco {
+    padding-left: 50px;
+}
+
+.fontebloco {
+    font-size: 16px;
+}
+
+.botaocursos {
+    padding: 30px;
+}
+
+.botao3 {
+    width: fit-content;
+    cursor: pointer;
+    padding: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    justify-content: center;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 2px solid rgb(101, 165, 101);
+
+    color: #147a02;
+}
+
+.botao3::before{
+    content: '';
+    position: absolute;
+    background: #041c00;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .9s ease;
+}
+
+.botao3:hover::before {
+    width: 100%;
+    transition: 500ms;
+    background-color: rgb(101, 165, 101);
+}

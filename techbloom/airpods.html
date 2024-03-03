@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="interface.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel='icon' type='text/css' media='screen' href='img/logo.png'>
+    <title>AirPods</title>
+</head>
+
+<body>
+    <header>
+        <a href="estoque.html" class="logo">AirPods</a>
+        <div class="menu">
+            <div class="itemmenu"> <a href=""></a>
+                <ul>
+                    <li class="dropdown-btn"><a href="loja.html"><b> Loja </b></a></li>
+
+                    <li class="dropdown-btn"><a href="#"><b> iPhone </b></a>
+                        <div class="submenu">
+                            <a href="iPhone14.html"> iPhone 14 </a>
+                            <a href="iPhone15.html"> iPhone 15 </a>
+                            <a href="iPhone15Pro.html"> iPhone 15 Pro </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-btn"><a href=""><b> AirPods </b></a>
+                        <div class="submenu">
+                            <a href="airpodsmax.html"> AirPods Max </a>
+                            <a href="airpods.html"> AirPods (3ª geração) </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-btn"><a href="#suporte"><b> Suporte </b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div>
+    </header>
+
+    <section class="bloco">
+        <div class="bloco-img">
+            <img src="img/fone2.png" class="one">
+        </div>
+
+        <div class="bloco-text">
+            <h1>AirPods<br>(3ª geração)</h1>
+            <h3>R$ 1.899,00</h3>
+            <h2> Em até 12x de R$ 158,25</h2>
+            <h5>R$ 1.709,10 à vista (10% de desconto)</h5>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+
+        <div class="area">
+            <div class="opcao">
+                <li><img src="img/fone2.png" onclick="slider('img/fone2.png')"></li>
+            </div>
+
+            <div class="opcao">
+                <li><img src="img/fone.png" onclick="slider('img/fone.png')"></li>
+            </div>
+
+            <div class="opcao">
+                <li><img src="img/fone3.png" onclick="slider('img/fone3.png')"></li>
+            </div>
+
+            <div class="opcao">
+                <li><img src="img/fone4.png" onclick="slider('img/fone4.png')"></li>
+            </div>
+        </div>
+    </section><!--bloco-->
+
+    <footer id="suporte">
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/atechbloom?igsh=MWdldnh3cjBjbjVieg=="><button><i
+                                    class="bi bi-instagram"></i></button></a>
+                        <a href="https://youtu.be/ei0WDdT4-6A?si=bZ-jom4Y-5iNIwCh"><button><i
+                                    class="bi bi-youtube"></i></button></a>
+                        <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-footer borda">
+
+                <p><i class="bi bi-envelope-fill"></i>
+                    <a href="#">contato@techbloom.com.br</a><br>
+                </p>
+
+                <div class="rodape">
+                    Copyright © 2024 TechBloom Inc. Todos os direitos reservados. CNPJ:
+                    00.623.904/0003-35<br><b>Política de Privacidade | Política de vendas | Avisos legais | Mapa do
+                        site</b><br>
+                    <b>Desenvolvedores:</b> Emilia Marinho, Hudson Santana e Maria Izabelly.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function slider(anything) {
+            document.querySelector('.one').src = anything;
+        };
+
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>

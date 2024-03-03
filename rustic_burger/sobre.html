@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Burger</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Monospace;
+            color: #220000;
+        }
+
+        ul.navbar {
+            font-size: 16px;
+            list-style-type: none;
+            margin: 0;
+            background-color: #220000;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        li.navitem {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a.navlink {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        header {
+            background-color: rgb(255, 180, 42);
+            text-align: center;
+            padding: 5px;
+        }
+
+        .emphasis {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .marketing {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .feedback-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .feedback {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .feedback img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .feedback-text {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .promo-text {
+            font-size: 70px;
+            font-family: fantasy;
+            color: #220000;
+            margin-bottom: 6px;
+        }
+
+        .promo-subtext {
+            font-size: 55px;
+            color: #220000;
+            font-family: papyrus;
+        }
+
+        h1 {
+            font-family: 'Papyrus', sans-serif;
+            font-size: 36px;
+            color: #220000;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .button {
+            background-color: #861825;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #220000;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            text-align: center;
+            font-size: 8px;
+        }
+
+        .baseboard {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .partition {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <td>
+                <center>
+                    <ul class="navbar">
+                        <li class="navitem"><a class="navlink" href="sobre.html">Sobre</a></li>
+                        <li class="navitem"><a class="navlink" href="cardapio.html">Cardápio</a></li>
+                        <li class="navitem"><a class="navlink" href="contato.html">Contato</a></li>
+                    </ul>
+                </center>
+                <br>
+                <br>
+                <header>
+                    <img src="assets/imagens/rustic_burger.png" height="400px">
+                </header>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <br>
+                <div>
+                    <h2 style="text-align: center; font-size: 18px;">Seja bem-vindo(a) ao nosso paraíso de hambúrgueres
+                        artesanais, hot-dogs recheados <br>
+                        e uma variedade de bebidas refrescantes. Oferecemos hambúrgueres suculentos, <br>
+                        uma seleção de sucos, refrigerantes e milk-shakes. <br>
+                        Cada mordida e gole são uma experiência única de sabor, criatividade e qualidade, <br>
+                        garantindo uma refeição memorável. <br></h2>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <tr>
+        <center>
+            <br>
+            <td><img src="assets/imagens/clientes.png" widht="740" height="400"></td>
+            <td><img src="assets/imagens/espaco.png" widht="740" height="400"></td>
+        </center>
+    </tr>
+
+    <div class="emphasis">
+        <div class="marketing">
+            <p class="promo-text">PROMOÇÃO<br><span class="promo-subtext">especial de<br></span>HAMBÚRGUER</p>
+            <p class="promo-text" style="font-size: 24px; font-size: papyrus;">Por apenas R$ 29,99!</p>
+            <div>
+                <br>
+                <a href="promocao.html">
+                    <button class="button" type="button" style="font-family: Lucida Console;">Confira.</button>
+                </a>
+            </div>
+        </div>
+        <img src="assets/imagens/promocao.png" height="750px">
+    </div>
+
+    <h1>Feedbacks de nossos Clientes</h1>
+    <div class="feedback-block">
+        <div class="feedback">
+            <img src="assets/imagens/Gabriela.png">
+            <div class="feedback-text">
+                <p style="font-size: 20px;"><strong>Gabriela</strong></p>
+                <p>“Esta lanchonete é o meu lugar <br>
+                    favorito para comemorar ocasiões <br>
+                    especiais. A qualidade consistente <br>
+                    da comida e o ambiente amigável <br>
+                    sempre tornam as visitas memoráveis.”</p>
+            </div>
+        </div>
+
+        <div class="feedback">
+            <img src="assets/imagens/Carlos.png">
+            <div class="feedback-text">
+                <p style="font-size: 20px;"><strong>Carlos</strong></p>
+                <p>“A decoração temática retrô adiciona <br>
+                    um charme único a este lugar. <br>
+                    É como voltar no tempo enquanto <br>
+                    saboreio um milk-shake.”</p>
+            </div>
+        </div>
+
+        <div class="feedback">
+            <img src="assets/imagens/Sofia.png">
+            <div class="feedback-text">
+                <p style="font-size: 20px;"><strong>Sofia</strong></p>
+                <p>"A equipe da lanchonete é <br>
+                    consistentemente amigável e <br>
+                    atenciosa, o que me deixa com <br>
+                    vontade de retornar regularmente."</p>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align: center; font-family: papyrus;">Localização</h1>
+    <center>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.437475995629!2d-35.058383125812085!3d-6.592422064442319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ad71edf9ef3559%3A0x7c0ecc99daf5dff3!2sR.%20Jos%C3%A9%20Tavares%20Bezerra%20-%20Mataraca%2C%20PB%2C%2058292-000!5e0!3m2!1spt-PT!2sbr!4v1693736497957!5m2!1spt-PT!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </center>
+
+    <footer>
+        <div class="baseboard">
+            <div class="partition">
+                <b>
+                    <p style="font-size: 10px;">Emilia Maria Oliveira Marinho</p>
+                </b>
+                emilia.m@escolar.ifrn.edu.br
+            </div>
+            <div class="partition">
+                <b>
+                    <p style="font-size: 10px;">Júlio César Nascimento Vieira</p>
+                </b>
+                julio.vieira@escolar.ifrn.edu.br
+            </div>
+            <div class="partition">
+                <b>
+                    <p style="font-size: 10px;">Maria Izabelly Alves Batista da Silva</p>
+                </b>
+                izabelly.maria@escolar.ifrn.edu.br
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
